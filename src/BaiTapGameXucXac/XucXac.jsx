@@ -1,6 +1,6 @@
 import React from "react";
 import {useDispatch, useSelector} from 'react-redux';
-import { datCuocAction } from "../Redux/actions/XucXacAction";
+import { datCuocTaiAction, datCuocXiuAction } from "../Redux/actions/XucXacAction";
 export default function XucXac() {
   const arrXucXac = useSelector((rootReducer) => rootReducer.XucXacReducer.mangXucXac);
   const dispatch = useDispatch()
@@ -15,7 +15,7 @@ export default function XucXac() {
       </p>
     );
   };
-
+  const {banChon} = useSelector((rootReducer)=>rootReducer.XucXacReducer); 
   return (
     <div className="row mt-3 text-center">
       <div className="col-4">
@@ -24,7 +24,7 @@ export default function XucXac() {
             className="display-4 p-5"
             onClick={() => {
               // Dùng dispatch để gửi dữ liệu lên redux
-              dispatch(datCuocAction());
+              dispatch(datCuocTaiAction());
             }}
           >
             Tài
@@ -45,7 +45,7 @@ export default function XucXac() {
             className="display-4 p-5"
             onClick={() => {
               // Dùng dispatch để gửi dữ liệu lên redux
-              dispatch(datCuocAction());
+              dispatch(datCuocXiuAction());
             }}
           >
             Xỉu
