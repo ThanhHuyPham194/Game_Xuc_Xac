@@ -1,0 +1,14 @@
+
+@font-face {
+    font-family: fontGame;
+    src: url(../assets/fonts/Pony.ttf);
+}
+.game-xuc-xac{
+    background-image: url(../../public/img/bgGame.png);
+    width: 98vw;
+    height: 50vw;
+    font-family: fontGame;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+}
