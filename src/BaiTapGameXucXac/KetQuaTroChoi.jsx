@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 // kết nối redux
-import playGameAction from "../Redux/actions/playGameAction";
+import {playGameAction} from "../Redux/actions/XucXacAction";
 
 export default function KetQuaTroChoi() {
   const {banChon, tongSoBanChoi, soBanThang} = useSelector((rootReducer)=>rootReducer.XucXacReducer);

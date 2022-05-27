@@ -1,6 +1,6 @@
 import React from "react";
 import {useDispatch, useSelector} from 'react-redux';
-import datCuocAction from '../Redux/actions/datCuocAction';
+import { datCuocAction } from "../Redux/actions/XucXacAction";
 export default function XucXac() {
   const arrXucXac = useSelector((rootReducer) => rootReducer.XucXacReducer.mangXucXac);
   const dispatch = useDispatch()
